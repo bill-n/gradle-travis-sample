@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        List<PrivateClient> Client = new Arrays.asList(
+        List<PrivateClient> Client =  Arrays.asList(
                 new PrivateClient("ben",102,ServiceLevel.GOLD),
                 new PrivateClient("ali", 122, ServiceLevel.GOLD),
                 new PrivateClient("yaa", 120, ServiceLevel.PLATINUM),
@@ -20,10 +20,11 @@ public class Main {
         );
 
         List<PrivateClient> goldClient = new ArrayList<>();
-        for (PrivateClient privateclient : PrivateClient){
+        for (PrivateClient privateclient : Client){
             //Names of all the Gold clients
             if(privateclient.getServiceLevel()==ServiceLevel.GOLD) {
                 goldClient.add(privateclient);
+
 
 
             }
